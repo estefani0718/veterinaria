@@ -1,0 +1,9 @@
+:root{
+
+    --color__primary:#1FA7F0;
+    --color__blanco:#fff;
+    --color__secundary:#40cfff;
+    --color__button:#f7d547;
+    /* imagenes de fondo */
+    --imagen__fondo-one:url(/img/imagen1.png);
+}

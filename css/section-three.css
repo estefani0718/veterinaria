@@ -1,0 +1,6 @@
+.contenedor__section-three{
+    background-image: url(/img/imagen3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
