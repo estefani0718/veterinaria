@@ -1,6 +1,7 @@
 .contenedor__section-three{
-    background-image: url(/img/imagen3.png);
+    background-image: var(--imagen__fondo-three);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    width: 100%;
+    height: 130vh;
 }
