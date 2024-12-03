@@ -1,10 +1,14 @@
 :root{
 
-    --color__primary:#1FA7F0;
+    --color__primary:#5380c1;
+    --color__primary-trans:rgba(8, 56, 133, 0.6);
+    --color__secundary:#5dade2;
     --color__blanco:#fff;
-    --color__secundary:#40cfff;
+    --color__negro:#343434;
     --color__button:#f7d547;
+    --color_f3:rgba(255, 204, 0, 0.85);
     /* imagenes de fondo */
     --imagen__fondo-one:url(/img/imagen1.png);
     --imagen__fondo-three:url(/img/imagen2.png);
+    --imagen__figura:url(/img/otrasplandemejora.png);
 }

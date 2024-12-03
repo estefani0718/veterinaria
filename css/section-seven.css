@@ -1,0 +1,10 @@
+.section__seven{
+    width: 100%;
+    height: 120vh;
+    background-color: var(--color__secundary);
+    background-image: url(/img/fondo_figuras3.png);
+    background-repeat: no-repeat;
+
+    background-size: 90% 80%;
+    background-position: bottom  right;
+}
