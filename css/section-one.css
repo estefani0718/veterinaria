@@ -32,21 +32,3 @@
    
 }
 
-.boton__one{
-    display: flex;
-    width: 20%;
-    height: 7%;
-    background-color: var(--color__button);
-    text-align: center;
-    align-items: center;
-    border-radius: 40px;
-    margin: 0 auto;
-    border: none;
-    font-size: 30px; 
-    color: var(--color__blanco);
-    font-weight: bold;
-    padding: 10px;
-    text-decoration: none; 
-    cursor: pointer;
-    justify-content: center;
-}

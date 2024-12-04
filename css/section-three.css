@@ -1,5 +1,5 @@
 .section__three{
-    background-image:  linear-gradient(  var(--color_f3),var(--color_f3)), var(--imagen__fondo-three) ;
+    background-image:  linear-gradient(  var(--color_f3),var(--color_f3)), var(--imagen__fondo-two) ;
     background-size: cover;
     width: 100%;
     height: 130vh;

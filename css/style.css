@@ -16,3 +16,25 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.boton__one{
+  display: flex;
+  width: 15vw;
+  background-color: var(--color__button);
+  text-align: center;
+  align-items: center;
+  border-radius: 40px;
+  margin: 0 auto;
+  border: none;
+  font-size: 1.5vw; 
+  color: var(--color__blanco);
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none; 
+  cursor: pointer;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.boton__one:hover{
+  background-color: var(--color_f3);
+  color: var(--color__negro);
+}

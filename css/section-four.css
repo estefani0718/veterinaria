@@ -35,22 +35,7 @@
     height: 30%;
     margin-bottom: 40px;
 }
-.section__boton__one{
-    display: flex;
-    width: 30%;
-    height: 12%;
-    background-color: var(--color__button);
-    align-items: center;
-    border-radius: 40px;
-    border: none;
-    font-size: 30px; 
-    color: var(--color__blanco);
-    font-weight: bold;
-    padding: 10px;
-    text-decoration: none; 
-    cursor: pointer;
-    justify-content: center;
-}
+
 .section__four__img{
     width: 30%;
     border-radius:50%;
