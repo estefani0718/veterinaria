@@ -1,52 +1,50 @@
-.section__three{
-    background-image:  linear-gradient(  var(--color_f3),var(--color_f3)), var(--imagen__fondo-two) ;
-    background-size: cover;
-    width: 100%;
-    height: 130vh;
-    background-blend-mode: multiply;
+    /*section 3 */
 
+.section__three{/*en esta clase es la principal , el contendor de todo de  seccion 3 */
+    background-image:  linear-gradient(  var(--color_linear-gradient-3),var(--color_linear-gradient-3)), var(--imagen__fondo-two) ;
+    /*le damos una imagen de fondo y con un color de fondo no tan cargado */
+    background-size: cover;/*esta otra propiedad nos ayuda a q se amplia la imagen a todo el contenedor */
+    width: 100%;/*le damos un tamaño de ancho de la pantalla*/
+    height: 130vh;/*le damos una altura al contenedor  */
+    background-blend-mode: multiply;/*esta propiedad nos ayuda mezclar el color con la imagen */
 }
-.section__three__texts{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 5%;
+.section__three__texts{/*en esta clase es el contendor de los textos o parrafos */
+    display: flex;/*esta propiedad nos ayuda a distribuir los elementos dentro del contenedor */
+    flex-direction: column;/*esta otra propiedad nos posiciona los elemntos en columna */
+    text-align: center;/*esta nos a linea el texto o el contenedor */
+    padding-top: 5%;/*nos da el espacio interno de los elementos */
+    color: var(--color__blanco);/*le damos un color general a los textos */
 }
-.section__three__texts-one{
-    color: var(--color__blanco);
-    font-size: 60px;
-    font-weight: bold;
-    color: var(--color__blanco);
-    margin-top: 30px;
-    margin-bottom: 40px;
+.section__three__texts-one{/*esta clase es para el primer texto */
+    font-size: 60px;/*le damos un tamaño a la letra  */
+    font-weight: bold;/*le damos un grosor al texto */
+    margin-top: 30px;/*nos da un espacio exterior hacia arriba hasta el borde  */
+    margin-bottom: 40px;/*nos da un espacio exterior hacia abajo */
 }
-.section__three__texts-p{
-    width: 40%;
-    font-size: 30px;
-    color: var(--color__blanco);
-    margin-left: 30%;
+.section__three__texts-p{/*esta clase es para el segundo texto */
+    width: 40%;/*le damos un tamaño al parrafo en general */
+    font-size: 30px;/*le damos un tamaño al texto */
+    margin-left: 30%;/*nos da un espacio exterior hacia la izquierda*/
 }
-.section__three-cards-circulares{
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 10%;
+.section__three-cards-circulares{/*en ests clase es un contedor de trajetas o circulitos */
+    display: flex;/*esta propiedad nos ayuda a distribuir los elementos dentro del contenedor */
+    justify-content: space-evenly;/*esta propiedad distribuye los elementos dentro de un contenedor de manera que haya un espacio igual entre ellos */
+    padding-top: 10%;/*nos da el espacio interno de los elementos */
     
 }
-.section__three-card{
-    width: 300px;
-    height:300px;
-    border:8px solid var(--color__blanco);
-    border-radius: 400px;
-    text-align: center;
-    font-weight: bold;
-    padding-top:80px;
+.section__three-card{/*esta clase es para cada una de las tarjetas o circulos que aparecen reflejados.es una en general  */
+    width: 300px;/*le damos un tamaño */
+    height:300px;/*le damos un altura */
+    border:8px solid var(--color__blanco);/*con esta propiedad le damos grosor de bordeado  a las cartitas o circulos*/
+    border-radius: 400px;/*esta otra le damos la redondes de los circulos */
+    text-align: center;/*esta nos a linea el texto  */
+    font-weight: bold;/*le damos un grosor al texto */
+    padding-top:80px;/*nos da el espacio interno de los elementos */
+    color: var(--color__blanco);/*le damos un color general a los textos */
 }
-.section__three-card-num{
-    font-size: 40px;
-    color: var(--color__blanco);
-    
+.section__three-card-num{/*esta clase es para el primer texto */
+    font-size: 2vw;   /*le damos un tamaño al texto */ 
 }
-.section__three-card-text{
-    font-size: 2rem;
-    color: var(--color__blanco);
+.section__three-card-text{/*esta clase es para el segundo texto  */
+    font-size: 2rem;/*le damos un tamaño al texto */ 
 }

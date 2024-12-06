@@ -1,48 +1,96 @@
-.header__content{
-    background-color:var(--color__primary-trans);
-    height: 20%;
-    position: fixed;
-    opacity: 0.75;
-    top: 0%;
-    width: 100%;
-    
-    
+   /* header*/
+
+.header__content{/*este sera conetendor de todo el  header*/
+    background-color:var(--color__primary-trans);/*este sera su color principal*/
+    width: 100%;/*este sera su ancho de la pantalle */
+    height: 20%; /*este sera su alto de pantalla en total */
+    position: fixed;/*este contenedor, tendra una poscion que sobre sale de las capas */
+    top: 0%;   /*esta propiedad con ayuda de su posicionamiento le damos  un movimiento fijo o su posicion original  */
+    opacity: 0.75;/*esta propiedad nos ayuda con la opacacidad de su color a todo el contenedor*/
 }
-.header__elements{
-    display: flex;
-   padding: 20px;
-   justify-content: space-around;
+.header__elements{/*este sera un contenedor para los elementos que estan dentro  header */
+    display: flex;/*esta propiedad nos ayuda a disribuir los elementos del header */
+   padding: 20px;/* con esta otra propiedad le damos un espacio entre el contenido y el borde interno */
+   justify-content: space-around;/*estos nos alinea los elementos con ayuda de la propiedad display generando espacios */
 }
-.header__logo{
-    width: 50%;
-    object-fit: contain;
+.header__logo{/*esta clase es para la imagen */
+    width: 46%;/*le damos una anchura*/
+    object-fit: contain;/*con esta propiedad la ajustamos al tamaño del ancho */
 }
-.header__texts{
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center; 
-    margin-top: 30px;
-    justify-content: space-evenly;
-    margin-top: 60px;
+.header__texts{/*esta  clase es del los textos o de la etiqueta nav */
+    display: flex;/*esta propiedad nos ayuda a disribuir los elementos dentro de la eqieuta nav  */
+    width: 60vw;/* le damos un anchura */
+    padding-top: 15px;/*le damos un espacio dentro del contenido del borde de arriba con los elementos */
+    justify-content: space-between;/*estos nos alinea los elementos con ayuda de la propiedad display generando espacios*/
+    margin-top: 3.5%;
 }
-.header__texts-a{
-    text-decoration: none;
-    color: var(--color__blanco);  
-    font-weight: bold;
-    padding: 20px;  
-    font-size: 40px;
+.header__texts-a{/*esta clase es para la etiqueta en linea :a */
+    text-decoration: none;/*esta propiedad lle quitamos visualmente la linea que esta contiene */
+    color: var(--color__blanco);  /*le damos un color al texto  */
+    font-size: 1.5vw;/*le damos un tamaño al texto */
+    font-weight: bolder;/*esta nos define el grosor de el texto del contendido */
+}
+.header__texts-a-icon{/*esta clse espara el icono que hay en el header*/
+    text-decoration: none;/*esta propiedad lle quitamos visualmente la linea que esta contiene*/
+    color: var(--color__blanco);/*le damos un color al texto*/
+    font-size: 40px;/*le damos un tamaño al texto */
+    margin-left: 55px;/*esta propiedad nos genera un espacio  exterior hacia la izquierda*/
+    font-weight: bolder;/*esta nos define el grosor de el texto del contendido */
+}
+    /* footer  */
+
+.content__footer{/* esta clase es para tod el contenido del footer*/
+    background-color:  var(--color__negro);/* le damos un color de fondo */
+    width: 100%;/*le damos un tamaño*/
+    height: 50vh;/*le damos una altura */
+    color: var(--color__blanco);/*y le damos un color al texto */
+}
+.content__footer-all{/*en esta clase contien la grid de todo los elemntos del contenido */
+    display: grid;/*la grid no ayuda a tener una estructura de columnas y filas */
+    grid-template-columns: 50vw repeat(3,1fr);/* aqui damos los tamaños de las clumnas */
+    padding: 30px;/*le damos un espacio dentro del contenido hacia al borde*/
+}
+.content__footer-titles{/*en esta clase contendra a la primera columna */
+    text-align: start;/*alineamos los parrafos */
+}
+.content__footer__text{/*en esta otra clase estara el primer texto */
+    font-size: 2vw;/*le damos un tamaño al parrafo */
+    font-weight: 500;/*le damos el grosor del texto */
+    padding-bottom: 20px;/*y le damos un espacio hacia dentro del contenido */
+}
+.content__footer__text-p{  /*esta contendra el otro parrafo */
+    width: 35vw;/* le damos una anchura al parrafo */
+    font-size: 1.3vw;/*le damo sun tamaño al parrafo */
+}
+.content__redes{/*esta clase contendra a los iconos */
+    margin-top: 40px;/*le damos un espacio afuera del contenido para una separacion  de  arriba con el borde*/
+    text-align: start;/*alineamos los textos */
+}
+.content__redes-sociales{/* le damos una clase a las etiquetas en linea en este caso la a*/
+    background-color: var(--color__blanco);/*le damos un color de fondo */
+    font-size: 2vw;/*de damos un tamaño */
+    margin: 10px;/*le damos un sepracion de todo los lados con el borde */
+    padding:5px;/* le damos un espacio interno con el borde del todo el elemento   */
+    border-radius: 60%;/* le damos un borde a todo el elemento */
+}
+.content__redes-sociales:hover{/*esta una clase y una pseuco-clase , que no ayuda a dar una pequeña interactividad con los colores */
+    background-color: var(--color__secundary);/*cambiamos el color de fondo */
+}
+.icono{/*una clase para el icono */
+    color: var(--color__negro);/*le damos un color */
+    text-align: center;/*lo alineamos al centro*/
+    font-size: 50px;/*le damos un tamaño */
+}
+.content__adicional{/*en esta clase sera la segunda fila de la grid */
+    text-align: start;/*alineamos los parrafos */
+}
+.content__adicional-title{/*esta clase nos ayuda al titulo */
+    font-size: 1.5vw;/*le damos un tamaño al texto */
+    font-weight: 500;/*le damos un grosor al texto*/
+    padding-bottom: 20px;/*le damos un espacio interno de los elementos hacia abajo */
+}
+.content__adicional-p{/*esta clase es para el parrafo */
+    font-size: 1vw;/*le damos un tamaño al texto */
+    padding: 5px;/*le damos sun espacio interno */
 }
 
-.header__texts-a-icon{
-    text-decoration: none;
-    color: var(--color__blanco);
-    font-size: 40px;
-    margin-left: 60px;
-    font-weight: bolder;
-}
-/* footer  */
-.content__footer{
-    background-color:  #343434;
-    width: 100%;
-    height: 60vh;
-}

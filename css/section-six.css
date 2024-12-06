@@ -1,62 +1,61 @@
-.section__six{
-    width: 100%;
-    height: 100vh;
-    background-color: var(--color__primary);
-}
-.section__six-texts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   padding-top: 30px;
+  /*section 6 */
 
+.section__six{/*en esta clase es la principal , el contendor de todo de  seccion 6 */
+    width: 100%;/*le damos un tamaño de ancho de la pantalla*/
+    height: 100vh;/*le damos una altura al contenedor  */
+    background-color: var(--color__primary);/*le damos un color de fondo*/
 }
-.section__six-text{
-    font-size: 3vw;
-    color: var(--color__blanco);
-    margin: 30px;
+.section__six-texts {/*en esta clase es el contendor de los textos o parrafos */
+    display: flex;/*esta propiedad nos ayuda a distribuir los elementos dentro del contenedor */
+    flex-direction: column;/*esta otra propiedad nos posiciona los elemntos en columna */
+    align-items: center;/*alinea los items al centro */
+   padding-top: 30px;/*nos da el espacio interno de los elementos arriba hasta tocar el borde seprando los elementos */
+   color: var(--color__blanco);/*le damos un color general a los textos */
 }
-.section__six-text-p{
- font-size: 30px;
- color: var(--color__blanco);
- width: 47%;
- text-indent: -15px;
+.section__six-text{/*esta clase es para el primer texto */
+    font-size: 3vw;/*le damos un tamaño a la letra  */
+    margin: 30px 0px 30px 30px ;/* le damos un espacio exterior  a  los elementos  */
 }
-.section__six-cards{
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    margin-top: 5%;
-    flex-wrap: wrap;
+.section__six-text-p{/*esta clase es para el segundo texto */
+ font-size: 30px;/*le damos un tamaño al texto */
+ width: 47%;/*le damos un tamaño al parrafo en general */
+ text-indent: -15px;/*esta propiedad nos aplica una sangria al texto */
 }
-.card{
-    background-color: var(--color__blanco);
-    width: 18vw;
-    text-align: center;  
-    border-radius: 15px;
-    color: var(--color__secundary);
-    display: flex;
-    flex-direction: column;
+.section__six-cards{/*esta clase es para contenedor de todas las tarjetas */
+    display: flex;/*esta propiedad nos ayuda a distribuir los elementos dentro del contenedor */
+    width: 100%;/*le damos un tamaño al parrafo en general */
+    justify-content: space-evenly;/*esta propiedad distribuye los elementos dentro de un contenedor de manera que haya un espacio igual entre ellos */
+    margin-top: 5%;/*nos da un espacio exterior hacia arriba hasta el borde  */
     
 }
-.card__text{
-    font-size: 1.5vw;
-    margin: 10px;
+.card{/*esta clase es para todo el contenedor de la tarjeta */
+    background-color: var(--color__blanco);/*le damos un color de fondo */
+    width: 18vw;/*le damos un tamaño */
+    text-align: center;  /*la alineamos tanto la carta o el texto */
+    border-radius: 15px;/*le damos un  bordeado a las esquina de la tarjeta */
+    color: var(--color__secundary);/*le damos un color general a los textos */
+    display: flex;/*esta propiedad nos ayuda a distribuir los elementos dentro del contenedor */
+    flex-direction: column;/*esta otra propiedad nos posiciona los elemntos en columna */
+    
 }
-.card__img{
-    width: 10vw;
-    margin: 0 auto;
+.card__text{/*esta clase es para el primer texto */
+    font-size: 1.5vw;/*le damos un tamaño a la letra  */
+    margin: 10px;/*le damos un espacio externo a los elementos */
+}
+.card__img{/*eat clase es para la imagen */
+    width: 10vw;/*le damos un tamaño */
+    margin: 0 auto;/*la centramos */
 
 }
-.card__text-span{
-    text-align: center;
-    font-size: 1.5vw;
-    font-weight: bold;
+.card__text-span{/*esta clase es para el segundo texto */
+    text-align: center;/*lo alineamos al centro */
+    font-size: 1.5vw;/*le damos un tamaño al texto */
+    font-weight: bold;/*le damos un grosor al tetxo */
 }
-.card__text-p{
-    width: 15vw;
-    font-size: 20px;
-    justify-content: center;
-    margin:0 auto;
-    margin-top: 10px;
-    margin-bottom: 13px;
+.card__text-p{/*esta clase para el texto o parrafo .ultimo .*/
+    width: 15vw;/*le damos un tamaño al parrafo en general */
+    font-size: 1vw;/*le damos un tamaño al texto */
+    margin:0 auto;/*la centramos */
+    margin-top: 10px;/*le damos un espacio externo a los elementos  hacia arriba  */
+    margin-bottom: 13px;/*le damos un espacio externo a los elementos  hacia abajo */
 }

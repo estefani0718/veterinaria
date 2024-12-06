@@ -8,33 +8,243 @@
  @import url(section-seven.css); 
  @import url(section-eigth.css); 
  @import url(custom-properties.css);
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');/*este link o import  es para la fuente de la letra  */
   *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body{
+  overflow-x:hidden ;/*esta propiedad nos ayuda a q no tenga un scrool en el eje x de la pantalla */
+}
 
+/* este clase es en general del boton */
 .boton__one{
-  display: flex;
-  width: 15vw;
-  background-color: var(--color__button);
-  text-align: center;
-  align-items: center;
-  border-radius: 40px;
-  margin: 0 auto;
-  border: none;
-  font-size: 1.5vw; 
-  color: var(--color__blanco);
-  font-weight: bold;
-  padding: 10px;
-  text-decoration: none; 
-  cursor: pointer;
-  justify-content: center;
-  margin-bottom: 10px;
+  display: flex;/*esta propiedad nos ayuda a disribuir los elementos dentro del contenedor */
+  width: 15vw;/*le damos un tamaño al botton */
+  background-color: var(--color__button);/*le damos un color de fondo */
+  border-radius: 40px;/*le damos  bordeados */
+  border: none;/*le quitamos el borde que trae por defecto */
+  font-size: 1.5vw; /*le damos un tamaño a la letra dentro del botton*/
+  color: var(--color__blanco);/*le damos un color a letra */
+  font-weight: bold;/*le damos un grosor a letra */
+  padding: 10px;/*le damos un esoaciado iterno al elemento*/
+  text-decoration: none; /*le quitamos la linea que tare la etqiueta a por default */
+  cursor: pointer;/*este propiedad nos ayuda a que cuando passamos el cursor por el botton se señale para darle un click */
+  justify-content: center;/*lo alineamos */
+  margin-bottom: 10px;/*le doy un espaciado exterior */
+  margin-left: 25px;/*le doy este demas para  un boton despues  que lo necsita */
 }
-.boton__one:hover{
-  background-color: var(--color_f3);
-  color: var(--color__negro);
+.boton__one:hover{/*esta clase , esta acompada de una pseudo-clase al elemento */
+  background-color: var(--color_linear-gradient-3);/*le damos otro color de fondo */
+  color: var(--color__negro);/*le damos otro color al texto */
 }
+
+/*las medias queries:responsiva  */
+
+@media (max-width:800px  ){/*le damos una medida a nuestra media querie para que se haga repsonsiva nuestra pagina */
+    /* header */
+  .header__content {/*contenedor del header*/
+    width: 100vw;/*le damos nuevos valores de anchura de la pantalla */
+    height: 100px;/*le damos nuevos valores de altura */
+  }
+  .header__elements{/*la clase de contenedor de los elementos del header */
+   display: flex;/*nos ayuda a distribuir los elemntos dentro del contenedor */
+   margin-bottom: 10%;/*le damos un espaciado exterior en los elementos */
+  }
+  .header__logo{/*clase que contiene el logo en el header*/
+    width: 15vw;/*le damos un tamaño */
+  }
+  .header__texts{/*clase de los textos del header */
+    width:70vw;/*le damos un tamaño */
+  }
+  .header__texts-a-icon{/*clase del  icono */
+    font-size: 2.5vw;/*le damos un tamaño como tal al icono */
+    margin-right: 20px;/*le damos un espaciado exterior en los elementos a la izquierda  */
+  }
+  /* section one  */
+  .section__one{/*clase al contenedor de la seccion 1 */
+    width: 100vw;/*le damos nuevos valores de anchura de la pantalla */
+    height: auto;/*le damos nuevos valores de altura  en este caso auto */
+    background-position: center ;/*pocionamos la imagen */
+  }
+  .section__one__texts-title{/*clase de el primer texto */
+    font-size: 6vw;/*le damos un tamaño texto*/
+    margin-top: 15%/*le damos un espaciado exterior en los elementos */
+  }
+  .section__one__texts-p{/*clase de el segundo texto */
+    font-size: 2.8vw;/*le damos un tamaño texto*/
+    width:60vw;/*le damos nueva anchura del parrafo */
+    text-indent: 0px;/*y no le apliacamos sangria*/
+  }
+  .boton__one{/*clase del boton en geneal */
+    width: 25vw;/*le damos nuevo valor de anchura */
+    font-size: 3vw;/*le damos un  nuevo tmaño a la letra */
+    margin: 0 auto;/*lo poscionamos centrado */
+    margin-bottom: 5%;/*le damos un espaciado exterior al elemento */
+  }
+  /* section 2 */
+  .section__two{/*clase al contenedor de la seccion 2 */
+    width: 100vw;/*le damos nuevos valores de anchura de la pantalla */
+    height: auto;/*le damos nuevos valores de altura  en este caso auto */
+  }
+  .section__two__texts-p{/*clase de el segundo texto */
+    font-size: 3vw;/*le damos un  nuevo tmaño a la letra */
+  }
+  .section__two__cards{/*la clase para las tarjetas */
+    display: flex;/*nos ayuda a distribuir los elemntos dentro del contenedor */
+    flex-direction: column;/*nos posiciona los elemntos en columna */
+  }
+
+  .section__two__cards-text-p{/*esta clase es para el segundo texto de las tarjetas */
+    font-size: 2vw;/*le damos un  nuevo tmaño a la letra */
+    margin-bottom: 5%;/*le damos un espaciado exterior al elemento */
+  }
+  /* section 3  */
+  .section__three{/*clase al contenedor de la seccion 3 */
+    width: 100vw;/*le damos nuevos valores de anchura de la pantalla */
+    height: auto;/*le damos nuevos valores de altura  en este caso auto */
+    background-position: center ;/*nos ayuda a posicionar  la imagen a todo el contenedor */
+  }
+  .section__three-cards-circulares{/*la clase para las tarjetas */
+    display: flex;/*nos ayuda a distribuir los elemntos dentro del contenedor */
+    flex-wrap: wrap;/*nos ayuda a poscionar los elementos cuando se rompe la direccion del flujo */
+    align-items: center;/*alinea los items al centro*/
+    gap: 4vw;/*con e gap damos un espacio entre cada uno de los elemntos */
+  }
+  .section__three-card-num{
+    font-size: 4vw;/*le damos un  nuevo tmaño a la letra */
+  }
+
+  /* section 4  y 5 algunas clases */
+  .section__four,.section__five {/*clase al contenedor de la seccion 4 y 5 ya que muchos son los mismos valores  */
+    width: 100vw;/*le damos nuevos valores de anchura de la pantalla */
+    height: 100vw;/*le damos nuevos valores de altura  */
+  }
+  .section__four__element, .section__five__element{/*clase del contenedor de los elementos */
+   display: flex;/*nos ayuda a distribuir los elemntos dentro del contenedor */
+   flex-wrap: wrap;/*nos ayuda a poscionar los elementos cuando se rompe la direccion del flujo */
+  }
+  .section__four__text,.section__five__text{/*clase a los textos pricipales */
+    font-size: 6vw;/*le damos un  nuevo tmaño a la letra */
+    margin: 0 auto  ;/*lo poscionamos centrado */
+    margin-bottom: 5%;/*le damos un espaciado exterior al elemento */
+  }
+
+  .section__four__text-p, .section__five__text-p{/*clase a los textos secundarios*/
+    margin: 0 auto  ;/*lo poscionamos centrado */
+    font-size: 3vw;/*le damos un  nuevo tmaño a la letra */
+    margin-bottom: 5%;/*le damos un espaciado exterior al elemento */
+  }
+  .section__four__img{/*clase para la imagen */
+    width: 30vw;/*le damos nuevos valores de anchura a la imagen  */
+    margin: 0 auto  ;/*lo poscionamos centrado */
+  }
+  /* section 5  */
+  .section__five__img{/*clase para la imagen */
+    width: 30vw;/*le damos nuevos valores de anchura a la imagen  */
+    margin: 0 auto  ;/*lo poscionamos centrado */
+    margin-top: 10%;/*le damos un espaciado exterior al elemento */
+  }
+
+  /* section 6 */
+  .section__six{/*clase al contenedor de la seccion 6 */
+    width: 100vw;/*le damos nuevos valores de anchura de la pantalla */
+    height: auto;/*le damos nuevos valores de altura  en este caso auto */
+  }
+  .section__six-cards{
+    display: flex;/*nos ayuda a distribuir los elemntos dentro del contenedor */
+    flex-direction: column;/*nos posiciona los elemntos en columna */
+    
+  }
+  .section__six-text{/*clase a los textos pricipales */
+    font-size: 6vw;/*le damos un  nuevo tmaño a la letra */
+  }
+  .section__six-text-p{/*clase a los textos secundarios*/
+    margin: 0 auto;/*lo poscionamos centrado */
+    font-size: 2.5vw;/*le damos un  nuevo tmaño a la letra */
+    width: 50vw;/*le damos nueva anchura del parrafo */
+  }
+  .card{/*la clase de tarjeta */
+    margin: 0 auto;/*lo poscionamos centrado */
+    width: 27vw;/*le damos un nuevo tamaño */
+    margin-bottom: 3%;/*le damos un espaciado exterior al elemento */
+  }
+  .card__text{/*clase al  texto pricipal */
+    font-size: 2.5vw;/*le damos un  nuevo tmaño a la letra */
+  }
+  .card__text-span,.card__text-p{/*clase a los textos secundarios*/
+    font-size: 2vw;/*le damos un  nuevo tmaño a la letra */
+  }
+
+
+  /* section 7 */
+  .section__seven{/*clase al contenedor de la seccion 7 */
+    width: 100vw;/*le damos nuevos valores de anchura de la pantalla */
+    height: auto;/*le damos nuevos valores de altura  en este caso auto */
+  }
+
+  .section__seven-text{/*clase al  texto pricipal */
+    font-size: 6vw;/*le damos un  nuevo tmaño a la letra */
+  }
+  .section__seven-text-p{/*clase a los textos secundarios*/
+    font-size: 3vw;/*le damos un  nuevo tmaño a la letra */
+  }
+  
+
+  .section__seven__content-cards{/*clase al contenedor de las tarjetas */
+    display: flex;/*nos ayuda a distribuir los elemntos dentro del contenedor */
+    flex-direction: column;/*nos posiciona los elemntos en columna */
+    align-items: center;/*alinea los items al centro  */
+    
+  }
+  .cards__text{/*clase al  texto pricipal */
+    font-size: 3vw;/*le damos un  nuevo tmaño a la letra */
+  }
+  .cards__text-p{/*clase a los textos secundarios*/
+    font-size: 2vw;/*le damos un  nuevo tmaño a la letra */
+    width: 40vw;/*le damos un nuevo tamaño al parrafo */
+    margin-bottom: 5%;/*le damos un espaciado exterior al elemento */
+  }
+
+  /*section 8   */
+
+  .section__eigth {/*clase al contenedor de la seccion 8 */
+    width: 100vw;/*le damos nuevos valores de anchura de la pantalla */
+    height: auto;/*le damos nuevos valores de altura  en este caso auto */
+  }
+  .section__eigth-text,.section__eigth-text-p{/*clase al  texto pricipal */
+    font-size: 3vw;/*le damos un  nuevo tmaño a la letra */
+  }
+  
+
+  /* footer */
+  .content__footer{
+    width: 100vw;/*le damos nuevos valores de anchura de la pantalla */
+    height: auto;/*le damos nuevos valores de altura  en este caso auto */
+  }
+  .content__footer-all{/*clase al contenedor de la grid */
+    grid-template-columns: repeat(2, 1fr);/*le creamos unos nuevos valores */
+    gap: 2vw;/*con el gap damos un espacio entre cada uno de los elemntos */
+  }
+  .content__footer__text{
+    font-size: 4vw;/*le damos un  nuevo tmaño a la letra */
+  }
+  .content__footer__text-p{
+    font-size: 2.5vw;/*le damos un  nuevo tmaño a la letra */
+  }
+  .content__redes-sociales,.icono{
+    font-size: 3vw;/*le damos un  nuevo tmaño a la letra */
+  }
+  
+  .content__adicional-title{
+    font-size: 3vw;/*le damos un  nuevo tmaño a la letra */
+  }
+  .content__adicional-p{
+    font-size: 2vw;/*le damos un  nuevo tmaño a la letra */
+  }
+}
+
+
+

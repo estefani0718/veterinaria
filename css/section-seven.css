@@ -1,62 +1,57 @@
-.section__seven{
-    width: 100%;
-    height: 100vh;
-    background-color: var(--color__secundary);
-    background-image: url(/img/fondo_figuras3.png);
-    background-repeat: no-repeat;
-    background-size: 90% 80%;
-    background-position: bottom  right;
+.section__seven{/*clase para tod el contenedor en general o la seccion*/
+    width: 100%;/*le damos un tamaño de ancho de la pantalla*/
+    height: 100vh;/*le damos una altura al contenedor  */
+    background-color: var(--color__secundary);/*le damos un color de fondo*/
+    background-image: url(/img/fondo_figuras3.png);/*le damos una imagen de fondo en este caso unas figuras */
+    background-repeat: no-repeat;/*esta propiedad nos ayuda a q no se multiplique la imagen */
+    background-size: 90% 80%;/*esta otra propiedad nos ayuda a darle una altura y anchura a la imagen  */
+    background-position: bottom right;/*esta otra propiedad nos ayuda a posicionar  la imagen a todo el contenedor*/
 }
-.section__seven-texts{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding-top: 30px;
+.section__seven-texts{/*en esta clase es el contendor de los textos o parrafos */
+    display: flex;/*esta propiedad nos ayuda a distribuir los elementos dentro del contenedor */
+    flex-direction: column;/*esta otra propiedad nos posiciona los elemntos en columna */
+    text-align: center;/*alineamos el texto*/
+    align-items: center;/*alineamos el item */
+    padding-top: 30px;/*nos da el espacio interno de los elementos */
+    color: var(--color__blanco);/*le damos un color general a los textos */
 }
-.section__seven-text{
-    color: var(--color__blanco);
-    font-size: 3vw;
-    margin-bottom: 20px;
+.section__seven-text{/*esta clase es para el primer texto */
+    font-size: 3vw;/*le damos un tamaño a la letra , utilizamos Viewport Width es mas flexible */
+    margin-bottom: 20px;/*le damos un espacio externo hacia abajo */ 
 }
-.section__seven-text-p{
-    font-size: 1.2vw;
- color: var(--color__blanco);
- width: 47%;
- text-indent: 10px;
-
-}
-.section__seven__content-cards{
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(2,700px);
-    justify-content: center;
-    margin-top: 5%;
-    gap: 4vw;
-   
-}
-.content-cards{
-    display: flex;
-}
-.content-cards__img{
-    width: 8vw;
-    height: 8vw;
-}
-.card_img{
-    width: 8vw;
-    height: auto;
-}
-.content-cards__texts{
-    text-align: start;
-    margin: 0px 30px;
-}
-.cards__text{
-    color: var(--color__blanco);
-    font-size: 1.5vw;
-   
+.section__seven-text-p{/*esta clase es para el segundo texto */
+    font-size: 1.2vw;/*le damos un tamaño a la letra , utilizamos Viewport Width es mas flexible */
+    width: 47%;/*le damos un tamaño como un mini contenedor al texto */
+    text-indent: 30px;/*esta propiedad nos aplica una sangria al texto */
     
 }
-.cards__text-p{
-    color: var(--color__blanco);
-    font-size: 1vw;
+.section__seven__content-cards{/*en esta clase ya es especial , aquie es el contenedor de la grid de las tarjetas */
+    display: grid; /*esta propiedad por decirlo asi , nos ayuda a organizar los elementos en filas y columnas */
+    grid-template-rows: auto;/*aqui definimos las filas */
+    grid-template-columns: repeat(2,700px);/*en esta otra definimos la columnas*/
+    justify-content: center;/*alineamos el el contenedor*/
+    margin-top: 5%;/*le damos un espacio externo hacia arriba */
+    gap: 4vw;/*nos da una espaciado entre cada elemento */
+   
+}
+.content-cards{/*esat clase es el contenedor de las tarjetitas */
+    display: flex;/*esta propiedad nos ayuda a distribuir los elementos dentro del contenedor */
+    color: var(--color__blanco);/*le damos un color general a los textos */
+}
+.content-cards__img{/*esta clase es del contenedor de la imagen*/
+    width: 8vw;/*le damos un tamaño */
+    height: 8vw;/*y le damos un altura */
+}
+.card_img{/*la clase para la imagen */
+    width: 8vw;/*le damos un tamaño*/
+}
+.content-cards__texts{/*en esta clase es el contendor de los textos o parrafos */
+    text-align: start;/*alineamos el texto */
+    margin: 0px 30px;/*le damos un espacio externo de los elementos */
+}
+.cards__text{/*esta clase es para el primer texto */
+    font-size: 1.5vw;/*le damos un tamaño a la letra , utilizamos Viewport Width es mas flexible */
+}
+.cards__text-p{/*esta clase es para el segundo texto */
+    font-size: 1vw;/*le damos un tamaño a la letra , utilizamos Viewport Width es mas flexible */
 }
