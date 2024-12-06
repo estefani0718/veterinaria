@@ -8,9 +8,9 @@
     --color__button:#f7d547;
     --color_linear-gradient-3:rgba(255, 204, 0, 0.85);
     /* imagenes de fondo */
-    --imagen__fondo-one:url(/img/imagen1.png);
-    --imagen__fondo-two:url(/img/imagen2.png);
-    --imagen__fondo-three:url(/img/imagen3.png);
-    --imagen__figura:url(/img/otrasplandemejora.png);
+    --imagen__fondo-one:url(../img/imagen1.png);
+    --imagen__fondo-two:url(../img/imagen2.png);
+    --imagen__fondo-three:url(../img/imagen3.png);
+    --imagen__figura:url(../img/otrasplandemejora.png);
     
 }
